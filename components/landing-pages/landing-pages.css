@@ -1,0 +1,135 @@
+.static-landing-page section {
+  min-height: calc(75vh - 8rem);
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.static-landing-page p a {
+  text-decoration: underline;
+}
+
+.static-landing-page section:first-of-type {
+  margin-top: 0rem;
+}
+
+.static-landing-page .background {
+  background: var(--page-color-background-color);
+  height: 100%;
+}
+
+.static-landing-page .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-landing-page .row {
+  display: flex;
+}
+
+.static-landing-page .row > * {
+  padding: 2rem;
+}
+
+.static-landing-page .flex {
+  flex: 1;
+}
+
+.static-landing-page img {
+  max-width: 400px;
+}
+
+.static-landing-page img.hero {
+  border-radius: var(--border-radius-large);
+}
+
+.static-landing-page img.hero-background {
+  position: relative;
+
+  border-radius: var(--border-radius-large);
+}
+
+.static-landing-page .hero-background {
+  padding: 1rem;
+  height: 100%;
+  background: var(--page-color-background-color);
+  border-radius: var(--border-radius-large);
+}
+
+.static-landing-page .headline-text {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.static-landing-page .primary-text {
+  font-family: var(--font-book);
+  font-size: 3rem;
+}
+
+.static-landing-page .secondary-headline-text {
+  font-family: var(--font-book);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.static-landing-page .primary-text,
+.static-landing-page .secondary-text {
+  max-width: 45rem;
+}
+
+.static-landing-page .secondary-text {
+  font-size: 1rem;
+}
+
+.static-landing-page .secondary-text strong {
+  color: var(--mdc-theme-secondary-dark);
+}
+
+.static-landing-page .lots-of-text {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.static-landing-page .lots-of-text p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.static-landing-page .cta-button {
+  background-color: var(--mdc-theme-secondary) !important;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 27rem;
+  padding: 1rem;
+  height: 4rem;
+}
+
+.static-landing-page .details > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-landing-page .details > div:not(:last-of-type) {
+  margin-bottom: 6rem;
+}
+
+.static-landing-page .details .title {
+  font-size: 2rem;
+}
+
+.static-landing-page .details img {
+  border-radius: 50%;
+}
+
+.static-landing-page .details p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .static-landing-page .hide-small {
+    display: none;
+  }
+}

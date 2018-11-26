@@ -1,0 +1,39 @@
+{
+  "name": "chris-esplin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/deltaepsilon/chris-esplin.git",
+  "author": "Chris Esplin <chris@christopheresplin.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@firebase/app-types": "^0.3.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-source-maps": "^0.0.3",
+    "firebase-tools": "^6.1.1",
+    "html-loader": "^0.5.5",
+    "markdown-it": "^8.4.2",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "rmwc": "^3.0.11",
+    "stats-webpack-plugin": "^0.7.0"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "yarn docker:build & yarn docker:deploy",
+    "docker:build": "docker build -t chris-esplin .",
+    "docker:deploy": "docker run --rm --env-file ./env.list chris-esplin sh bin/deploy/deploy.sh",
+    "docker:interactive": "docker run --rm --env-file ./env.list -it chris-esplin"
+  },
+  "devDependencies": {
+    "replace-in-file": "^3.4.2"
+  }
+}

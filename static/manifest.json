@@ -1,0 +1,37 @@
+{
+  "short_name": "Calligraphy.org",
+  "name": "Calligraphy.org",
+  "icons": [
+    {
+      "src": "/static/images/black-favicon-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/static/images/black-favicon-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/static/images/black-favicon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/static/images/black-favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/images/black-favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#177f62",
+  "background_color": "#005238",
+  "orientation": "portrait",
+  "gcm_sender_id": "103953800507"
+}
