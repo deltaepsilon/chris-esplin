@@ -6,29 +6,29 @@ import gtagEvent from '../../utilities/analytics/gtag-event';
 import './landing-pages.css';
 import '@material/button/dist/mdc.button.min.css';
 
-const heroUri = 'https://goo.gl/3iX4qW';
-const suppliesUri = 'https://goo.gl/rxgMKD';
-const fundamentalsUri = 'https://goo.gl/xcMjoF';
-const personalAlphabetUri = 'https://goo.gl/Wu8YkH';
-const whatsnextUri = 'https://goo.gl/PyEQAk';
+const heroUri =
+  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fchrisesplin-headshot-5.jpg?alt=media&token=8571adac-254b-4221-b712-71d5dfb9a330';
+const calligraphyUri = 'https://goo.gl/YVYk8h';
+const fullStackFirebaseUri =
+  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Ffull-stack-firebase.jpg?alt=media&token=09fca576-ecac-4596-9640-b2b2b62cd477';
+const githubUri =
+  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fgithub-contributions.png?alt=media&token=76bcd8a9-3083-43c5-a7c9-c025fe7401df';
+const howToFirebaseUri =
+  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fhow-to-firebase-orange.png?alt=media&token=0f97e7a3-c526-4d62-a7ed-fe4b76c5e065';
 
 export default props => {
   return (
-    <article id="i-want-to-learn-calligraphy" className="static-landing-page" role="main">
+    <article id="chris-hearts-code" className="static-landing-page" role="main">
       <section className="centered">
         <div className="row">
           <div className="hide-small">
-            <img src={heroUri} alt="Melissa Esplin headshot" />
+            <img src={heroUri} alt="Doh!" />
           </div>
           <div className="flex">
-            <h1 className="headline-text">You can learn calligraphy</h1>
-            <p className="primary-text">
-              Join <strong>8,537</strong> beginning and intermediate calligraphers learning online
-              since 2009
-            </p>
+            <h1 className="headline-text">Help!</h1>
+            <p className="primary-text">Need to solve business problems ASAP?</p>
             <p className="secondary-text">
-              <strong>Free Bonus</strong>: A cheat sheet on the best supplies for beginning
-              calligraphers
+              <strong>Hooray!</strong> Chris can sometimes help
             </p>
             <Link href="/sign-up">
               <a>
@@ -37,12 +37,12 @@ export default props => {
                   raised
                   onClick={() =>
                     gtagEvent('cta-click', {
-                      page: 'i-want-to-learn-calligraphy',
+                      page: 'chris-hearts-code',
                       position: 'primary',
                     })
                   }
                 >
-                  Yes, I want to learn calligraphy
+                  Yes, I would like to improve my business
                 </Button>
               </a>
             </Link>
@@ -50,79 +50,99 @@ export default props => {
         </div>
       </section>
       <section className="background">
-        <h2 className="secondary-headline-text">This is what you'll learn</h2>
+        <h2 className="secondary-headline-text">Recent Projects</h2>
 
         <div className="details">
           <div>
-            <img src={suppliesUri} alt="calligraphy supplies" />
-            <h3 className="title">Tools & Supplies</h3>
-            <p>Poor tools will hold you back.</p>
-            <p>Learn the ink, nib and paper combinations that play well together.</p>
+            <img className="margin" src={calligraphyUri} alt="calligraphy supplies" />
+            <p>Chris runs Calligraphy.org with his wife Melissa.</p>
+            <p>Calligraphy.org launched in 2012.</p>
+            <p>He writes 100% of the code.</p>
           </div>
           <div>
-            <img src={fundamentalsUri} alt="learn fundamentals" />
-            <h3 className="title">Fundamentals</h3>
-            <p>Build your technique with centuries-old fundamentals</p>
+            <a href="https://www.fullstackfirebase.com/">
+              <img src={fullStackFirebaseUri} alt="learn fundamentals" />
+            </a>
+            <h3 className="title">Google Developer Expert</h3>
+            <p>
+              Chris is a{' '}
+              <a href="https://developers.google.com/experts/people/chris-esplin">
+                {' '}
+                Google Developer Expert
+              </a>{' '}
+              (aka GDE).
+            </p>
+            <p>Chris specializes in Firebase and Web Technologies</p>
+            <p>
+              Chris teaches Firebase at{' '}
+              <a href="https://www.fullstackfirebase.com/">FullStackFirebase.com</a>
+            </p>
           </div>
           <div>
-            <img src={personalAlphabetUri} alt="unique flourishes" />
-            <h3 className="title">Personal Alphabet</h3>
-            <p>Make every stroke your own with unique flourishes and alphabets</p>
+            <img src={githubUri} alt="github" />
+            <h3 className="title">GitHub</h3>
+            <p>Everything Chris codes ends up on Github.</p>
+            <p>Sadly, much of it goes to private repos :(</p>
           </div>
           <div>
-            <img src={whatsnextUri} alt="personalized envelopes" />
-            <h3 className="title">Learn forever</h3>
-            <p>Keep learning with unlimited feedback</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qqX0nc8mwAQ"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <h3 className="title">How To Firebase: YouTube</h3>
+            <p>
+              Chris occasionally posts Firebase-related videos to{' '}
+              <a href="https://www.youtube.com/channel/UCaAByidxypZTYOj4OsKzD2Q">YouTube.com</a>!
+            </p>
+            <p>
+              He posts the accompanying articles on{' '}
+              <a href="https://howtofirebase.com/">HowToFirebase.com</a>
+            </p>
           </div>
-          <div>
-            <Link href="/sign-up">
-              <a>
-                <Button
-                  className="cta-button"
-                  raised
-                  onClick={() =>
-                    gtagEvent('cta-click', {
-                      page: 'i-want-to-learn-calligraphy',
-                      position: 'secondary',
-                    })
-                  }
-                >
-                  Get started for free
-                </Button>
-              </a>
-            </Link>
+          <div style={{ background: 'none' }}>
+            <a href="mailto:chris@christopheresplin.com">
+              <Button
+                className="cta-button"
+                raised
+                onClick={() =>
+                  gtagEvent('cta-click', {
+                    page: 'chris-hearts-code',
+                    position: 'secondary',
+                  })
+                }
+              >
+                Send Chris a friendly note
+              </Button>
+            </a>
           </div>
         </div>
       </section>
       <section className="lots-of-text">
-        <h2 className="secondary-headline-text">
-          Join over 8,537 students who have learned calligraphy with us since 2009
-        </h2>
+        <p>
+          <strong>Greetings!</strong>
+        </p>
+        <p>I got my start with a double-major in Finance and Economics from BYU.</p>
+        <p>
+          Working in economics was a great experience, and it opened a lot of doors... but it soon
+          became clear that finance/econ wasn't where the market wanted to deploy my talents :)
+        </p>
+        <p>I pivoted to code, particularly JavaScript, beginning in 2010.</p>
+        <p>
+          I've done a huge variety of work. Some has been at tech companies. Some has been for big
+          corporations that I don't get to talk about. Much of my work has been building
+          businesses for myself and others.
+        </p>
+        <p>
+          I love startups; however, I've done enough of them be well acquainted with pain and failure. I wouldn't say that I'm gunshy... but I'm no longer interested in unfunded projects. I bootstrap companies for myself, not for other people.
+        </p>
 
         <p>
-          You will learn to letter beautiful envelopes, invitations, save-the-dates, love letters
-          and scrapbook layouts. Our students have used calligraphy to supplement their design,
-          photography and event planning businesses.
-        </p>
-        <p>
-          There is no easy way to learn calligraphy. It requires consistent practice like every
-          other valuable skill. However, calligraphy is not nearly as difficult as it first appears.
-          We've taught over 8,537 students how to letter since 2009, and our online teaching
-          methodology has proven to be an efficient way for students to start lettering immediately.
-        </p>
-        <p>
-          Our beginner course starts with an overview of the supplies that you will need to get
-          started. Then you'll use our custom practice guides to trace the letterforms with a
-          pencil. From the pencil, you progress to pointed pen work, tracing letterforms and
-          eventually forming words and positioning those words on the page.
-        </p>
-        <p>
-          Our platform's secret sauce is our unique feedback system. As you complete your
-          assignments, you will upload snapshots of your work to your personal feedback gallery. You
-          can use the gallery to ask your instructor any questions that you have. Your instructor
-          will review your work, answer your questions and give you suggestions for improvement.
-          This form of one-on-one coaching will accelerate your learning far faster than reading and
-          practice guides alone.
+          Sincerely, <br />
+          <strong>Chris Esplin</strong>
         </p>
       </section>
     </article>

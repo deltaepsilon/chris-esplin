@@ -15,6 +15,7 @@
 .static-landing-page .background {
   background: var(--page-color-background-color);
   height: 100%;
+  padding: 2rem 0 0;
 }
 
 .static-landing-page .centered {
@@ -113,14 +114,22 @@
 }
 
 .static-landing-page .details > div:not(:last-of-type) {
-  margin-bottom: 6rem;
+  padding: 3rem 0;
+}
+
+.static-landing-page .details > div:nth-child(odd) {
+  background: var(--page-color-odd-background-color);
 }
 
 .static-landing-page .details .title {
   font-size: 2rem;
 }
 
-.static-landing-page .details img {
+.static-landing-page .details img.margin {
+  margin: 4rem 0;
+}
+
+.static-landing-page .details img.circle {
   border-radius: 50%;
 }
 
