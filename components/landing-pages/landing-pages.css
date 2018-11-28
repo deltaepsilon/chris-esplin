@@ -18,6 +18,13 @@
   padding: 2rem 0 0;
 }
 
+.static-landing-page .background img,
+.static-landing-page p,
+.static-landing-page iframe,
+.static-landing-page h3 {
+  max-width: calc(100vw - 2rem);
+}
+
 .static-landing-page .centered {
   display: flex;
   justify-content: center;
@@ -37,7 +44,7 @@
 }
 
 .static-landing-page img {
-  max-width: 400px;
+  width: 400px;
 }
 
 .static-landing-page img.hero {
@@ -92,6 +99,18 @@
   margin: auto;
 }
 
+.static-landing-page .lots-of-text img {
+  display: block;
+  margin: auto;
+}
+
+.static-landing-page .lots-of-text aside {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: .75rem;
+}
+
 .static-landing-page .lots-of-text p {
   font-size: 1.5rem;
   padding: 1rem;
@@ -101,7 +120,7 @@
   background-color: var(--mdc-theme-secondary) !important;
   margin: 2rem 0;
   width: 100%;
-  max-width: 27rem;
+  max-width: 25rem;
   padding: 1rem;
   height: 4rem;
 }
@@ -111,6 +130,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .static-landing-page .details > div:not(:last-of-type) {
@@ -137,8 +157,87 @@
   font-size: 1.5rem;
 }
 
+.resume {
+  padding: 2rem !important;
+}
+
+.resume .secondary-headline-text {
+  margin-bottom: 6rem;
+}
+
+.resume div {
+  margin: auto;
+  max-width: 960px;
+}
+
+.resume a {
+  text-decoration: underline;
+}
+
+.resume .header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume h2,
+.resume h3,
+.resume h4 {
+  margin: 0;
+}
+
+.resume h3 span:first-of-type {
+  white-space: nowrap;
+  width: 8rem;
+}
+
+.resume h3 span:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.resume h4 {
+  margin-left: 9rem;
+}
+
+.resume .with-margin {
+  margin: 0 0 1rem;
+}
+
+.resume h3,
+.resume h4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume ul {
+  margin: 1rem 0rem 2rem 7.5rem;
+}
+
+.resume li {
+  margin-bottom: 2px;
+}
+
+.resume .cta-button-wrapper {
+  margin: auto;
+}
+
+.resume .cta-button-wrapper a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   .static-landing-page .hide-small {
+    display: none;
+  }
+
+  .static-landing-page .show-small {
+    display: inherit;
+  }
+}
+
+@media (min-width: 1025px) {
+  .static-landing-page .show-small {
     display: none;
   }
 }

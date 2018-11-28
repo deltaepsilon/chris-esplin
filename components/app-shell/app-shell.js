@@ -23,13 +23,19 @@ export class AppShell extends React.Component {
     return firebase;
   }
 
+  componentDidMount() {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  }
+
   render() {
     return (
       <>
         <AnalyticsHead />
         <MetaHead
-          title="Chris Esplin - formerly GeoCities.com/ChrisEsplin"
-          description="I just want a Super NES for Christmas"
+          title="Chris Esplin: Web Dev Consultant and Entrepreneur based in Salt Lake City, Utah"
+          description="Chris practices JavaScript and business consulting in Salt Lake City, Utah. Chris only wants a Super NES for Christmas"
         />
         <FontsHead />
         <AppStyle />
