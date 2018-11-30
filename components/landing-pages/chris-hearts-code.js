@@ -212,7 +212,7 @@ export default props => {
             1795 E Walnut Grove Dr, Draper, UT 84020
             <br />
             <a href="chris@christopheresplin.com">Chris@ChristopherEsplin.com</a>,{' '}
-            <a href="tel:801.673.8585">801.673.8585</a>
+            <a href="tel:602-300-9796">602.300.9796</a>
             <br />
             GitHub: <a href="https://github.com/deltaepsilon">https://github.com/deltaepsilon</a>
           </div>
