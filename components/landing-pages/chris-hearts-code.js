@@ -17,7 +17,7 @@ const howToFirebaseUri =
   'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fhow-to-firebase-orange.png?alt=media&token=0f97e7a3-c526-4d62-a7ed-fe4b76c5e065';
 const resumeUri =
   'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2FEsplin-Christopher-Resume-2018.pdf?alt=media&token=49a73102-ca37-4a2e-9ab6-2958737f7447';
-const emailUri = encodeURI(`mailto:chris@christopheresplin?subject=Consulting Inquiry&body=Hey Chris,
+const emailUri = encodeURI(`mailto:chris@christopheresplin.com?subject=Consulting Inquiry&body=Hey Chris,
 
 Let's talk about JavaScript, Firebase and apps!
 
