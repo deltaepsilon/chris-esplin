@@ -28,7 +28,7 @@ const familyPictureUri =
 
 const bunchesUri = 'https://goo.gl/er1ZDb';
 
-const pixelsUri = 'https://goo.gl/wwr71z';
+const pixelsUri = 'https://goo.gl/CZoavJ';
 
 export default props => {
   return (
@@ -135,7 +135,7 @@ export default props => {
             </a>
             <h3 className="title">Pixels</h3>
             <p>
-              In addition to speaking in the third person, Chris likes to match mocks to the pixel.
+              In addition to writing in the third person, Chris likes to match mocks to the pixel.
             </p>
             <p>
               He built a Chrome extension named <a href="https://pixels.chrisesplin.com/">Pixels</a>{' '}
