@@ -26,6 +26,10 @@ Let's talk about JavaScript, Firebase and apps!
 const familyPictureUri =
   'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fesplin-family-2015.jpg?alt=media&token=4edba376-0517-4e98-ad71-eb5cfcc86339';
 
+const bunchesUri = 'https://goo.gl/er1ZDb';
+
+const pixelsUri = 'https://goo.gl/wwr71z';
+
 export default props => {
   return (
     <article id="chris-hearts-code" className="static-landing-page" role="main">
@@ -63,7 +67,10 @@ export default props => {
         <div className="details">
           <div>
             <img className="margin" src={calligraphyUri} alt="calligraphy supplies" />
-            <p>Chris runs <a href="https://www.calligraphy.org">Calligraphy.org</a> with his wife Melissa.</p>
+            <p>
+              Chris runs <a href="https://www.calligraphy.org">Calligraphy.org</a> with his wife
+              Melissa.
+            </p>
             <p>Calligraphy.org launched in 2012.</p>
             <p>He writes 100% of the code.</p>
           </div>
@@ -109,6 +116,30 @@ export default props => {
             <p>
               He posts the accompanying articles on{' '}
               <a href="https://howtofirebase.com/">HowToFirebase.com</a>
+            </p>
+          </div>
+          <div>
+            <a href="https://bunches.chrisesplin.com/">
+              <img src={bunchesUri} alt="bunches" />
+            </a>
+            <h3 className="title">Bunches</h3>
+            <p>Chris wanted to get better with HTML Canvas.</p>
+            <p>
+              <a href="https://bunches.chrisesplin.com/">Bunches</a> is a pattern-recognition card
+              came using HTML Canvas.
+            </p>
+          </div>
+          <div>
+            <a href="https://pixels.chrisesplin.com/">
+              <img src={pixelsUri} alt="pixels" />
+            </a>
+            <h3 className="title">Pixels</h3>
+            <p>
+              In addition to speaking in the third person, Chris likes to match mocks to the pixel.
+            </p>
+            <p>
+              He built a Chrome extension named <a href="https://pixels.chrisesplin.com/">Pixels</a>{' '}
+              to make mock matching a bit easier.
             </p>
           </div>
           <div style={{ background: 'none' }}>
@@ -219,24 +250,35 @@ export default props => {
 
           <h3 className="with-margin">EXPERIENCE</h3>
           <h3>
-            <span>2017-Present</span> <span>PLURALSIGHT</span> <span className="flex" />
+            <span>2019-Present</span> <span>WORKFRONT</span> <span className="flex" />
+            <span className="hide-small">LEHI, UT</span>
+          </h3>
+          <h4>Senior Software Engineer</h4>
+          <ul>
+            <li>
+              Writing JavaScript on a team with a fantastic bunch of Front-End Developers
+            </li>
+          </ul>
+          
+          <h3>
+            <span>2017-2018</span> <span>PLURALSIGHT</span> <span className="flex" />
             <span className="hide-small">SOUTH JORDAN, UT</span>
           </h3>
           <h4>Senior Software Engineer</h4>
           <ul>
             <li>
-              Developing Node.js/React/GraphQL applications for the Pluralsight.com customer
+              Developed Node.js/React/GraphQL applications for the Pluralsight.com customer
               experience
             </li>
-            <li>Utilizing test-driven development and lean methodologies</li>
+            <li>Utilized test-driven development and lean methodologies</li>
             <li>
-              Maintaining the legacy Pluralsight video player while developing its replacement
+              Maintained the legacy Pluralsight video player while developing its replacement
             </li>
             <li>
-              Pair programming with a small team to design, implement and deploy app code through
+              Pair programmed with a small team to design, implement and deploy app code through
               CI/CD
             </li>
-            <li>Containerizing application code using Docker Compose</li>
+            <li>Containerized application code using Docker Compose</li>
           </ul>
 
           <h3>
