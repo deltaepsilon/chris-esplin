@@ -16,7 +16,7 @@ const githubUri =
 const howToFirebaseUri =
   'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2Fhow-to-firebase-orange.png?alt=media&token=0f97e7a3-c526-4d62-a7ed-fe4b76c5e065';
 const resumeUri =
-  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2FEsplin-Christopher-Resume-2018.pdf?alt=media&token=49a73102-ca37-4a2e-9ab6-2958737f7447';
+  'https://firebasestorage.googleapis.com/v0/b/chris-esplin.appspot.com/o/assets%2FEsplin-Christopher-Resume-2019.pdf?alt=media&token=5cf30bc2-0c79-47b8-842f-3c13ba095f3c';
 const emailUri = encodeURI(`mailto:chris@christopheresplin.com?subject=Consulting Inquiry&body=Hey Chris,
 
 Let's talk about JavaScript, Firebase and apps!
@@ -256,12 +256,13 @@ export default props => {
           <h4>Senior Software Engineer</h4>
           <ul>
             <li>
-              Writing JavaScript on a team with a fantastic bunch of Front-End Developers
+              Leading development on a large React application utilizing the latest React APIs
             </li>
+            <li>Writing maintainable, well-tested JavaScript</li>
           </ul>
-          
+
           <h3>
-            <span>2017-2018</span> <span>PLURALSIGHT</span> <span className="flex" />
+            <span>2017-2019</span> <span>PLURALSIGHT</span> <span className="flex" />
             <span className="hide-small">SOUTH JORDAN, UT</span>
           </h3>
           <h4>Senior Software Engineer</h4>
@@ -271,9 +272,7 @@ export default props => {
               experience
             </li>
             <li>Utilized test-driven development and lean methodologies</li>
-            <li>
-              Maintained the legacy Pluralsight video player while developing its replacement
-            </li>
+            <li>Maintained the legacy Pluralsight video player while developing its replacement</li>
             <li>
               Pair programmed with a small team to design, implement and deploy app code through
               CI/CD
@@ -346,24 +345,6 @@ export default props => {
               Focused on JavaScript/CSS performance with best practices including efficient vanilla
               JS and optimized CSS selectors that perform in modern browsers and corporate IE8
               environments
-            </li>
-          </ul>
-
-          <h3>
-            <span>2011-2012</span> <span>FREELANCE</span> <span className="flex" />{' '}
-            <span className="hide-small">OREM, UT</span>
-          </h3>
-          <h4>LAMP-Stack Web Developer</h4>
-          <ul>
-            <li>
-              Bootstrapped IStillLoveCalligraphy.com through product development to ramen
-              profitability and continuing month-to-month growth using the Symfony2 PHP framework to
-              create an integrated shopping cart/CMS with Amazon S3/CloudFront and PayPal
-              integrations
-            </li>
-            <li>
-              Implemented a Magento shopping cart and wrote a custom front end for
-              FamilyStorehouse.net
             </li>
           </ul>
 
